@@ -20,7 +20,7 @@ services:
         condition: service_healthy
 
   database:
-    image: postgres:12-alpine
+    image: postgres:15.1-alpine
     volumes:
       - dev-db-data:/var/lib/postgresql/data
     environment:
